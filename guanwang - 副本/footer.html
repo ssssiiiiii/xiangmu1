@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+		<!--<script type="text/javascript" src="js/jquery.min.js"></script>-->
+		<script type="text/javascript">
+			$(function(){
+				var oM=$('.music');
+				var aLi=oM.find('li');
+				aLi.click(function(){
+					var index=$(this).index();
+					var userA=navigator.userAgent.toLowerCase();
+					if (userA.indexOf("msie")!=-1||userA.indexOf("rv:11.0")!=-1) {
+						alert(111)
+						$('body').append('<bgsound class="music'+index+'" src="music/sound0'+index+'.mp3" autoplay="true" loop="false"></bgsound>')
+					}else if(userA.indexOf("firefox")!=-1) {
+						$('bod3y').append('<embed class="music'+index+'" src="music/sound0'+index+'.mp3" autoplay="true" loop="false" hidden="true" width="0" height="0">')
+					}else{
+						$("body").append('<object class="music'+index+'" data="music/sound0'+index+'.mp3" autostart="true" loop="true" width="0" height="0">'+
+                    '<param name="src" value="music/sound0'+index+'.mp3">'+'<param name="autoplay" value="1">'
+                    +'<param name="loop" value="0">'+'</object>')
+					}
+					setTimeout(function(){
+						$('.music'+index).remove();
+					},3000)
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div class="music-box">
+			<ul class="music">
+				<li></li>
+				<li class="musicli1"></li>
+				<li class="musicli2"></li>
+				<li class="musicli3"></li>
+				<li class="musicli4"></li>
+				<li class="musicli5"></li>
+				<li class="musicli6"></li>
+			</ul>
+			<p>蜀ICP备16002451号</p>
+		</div>
+	</body>
+</html>

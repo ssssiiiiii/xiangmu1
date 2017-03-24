@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/list.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/list.js"></script>
+		<script type="text/javascript" src="js/listData.js"></script>
+	</head>
+	<body>
+		<div id="header"></div>
+		<div class="list_content">
+			<div style="margin-top: 120px;" class="model">
+				<h2>小鸟动态</h2>
+				<p>About Company</p>
+				<img src="images/three_points01.png" alt="" />
+			</div>
+			<h1>列表<span></span></h1>
+			<ul id="list">
+				<li>
+					<div class="sanjiao"></div>
+					<img src="images/list_img01.jpg"/>
+					<div class="list_txt">
+						<h6>胜林三境重装出发</h6>
+						<p>2017-03-15</p>
+						<span>小鸟掌学创建于2014年初，起源服务于四川省专业技术人员继续教育基地的在线培训平台</span>
+					</div>
+				</li>
+				<li>
+					<div class="sanjiao"></div>
+					<img src="images/list_img02.jpg"/>
+					<div class="list_txt">
+						<h6>小鸟掌学开通国外渠道</h6>
+						<p>2017-03-15</p>
+						<span>小鸟掌学创建于2014年初，起源服务于四川省专业技术人员继续教育基地的在线培训平台</span>
+					</div>
+				</li>
+				<li>
+					<div class="sanjiao"></div>
+					<img src="images/list_img03.jpg"/>
+					<div class="list_txt">
+						<h6>胜林三境天气app上线</h6>
+						<p>2017-03-15</p>
+						<span>小鸟掌学创建于2014年初，起源服务于四川省专业技术人员继续教育基地的在线培训平台</span>
+					</div>
+				</li>
+				<li>
+					<div class="sanjiao"></div>
+					<img src="images/list_img04.jpg"/>
+					<div class="list_txt">
+						<h6>国外报道</h6>
+						<p>2017-03-15</p>
+						<span>小鸟掌学创建于2014年初，起源服务于四川省专业技术人员继续教育基地的在线培训平台</span>
+					</div>
+				</li>
+			</ul>
+			<div class="list-more"></div>
+			<div class="list-more-con"></div>
+		</div>
+		<div class="top">
+			<div class="fixed_top"></div>
+			<div class="fixed_contactus"></div>
+		</div>
+		<div class="list-bottom"></div>
+		<div id="footer"></div>
+		<!--模板-->
+		<ul id="list_model" style="display: none;" >
+			<li class="list_list" articleId='$articleId$'>
+				<div class="sanjiao"></div>
+				<img src="$listImg$" />
+				<div class="list_txt">
+					<h6>$listTitle$</h6>
+					<p>$listDate$</p>
+					<span>$listContent$</span>
+				</div>
+			</li>
+		</ul>
+		<!--模板-->
+	</body>
+</html>

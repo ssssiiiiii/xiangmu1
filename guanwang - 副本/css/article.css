@@ -1,0 +1,57 @@
+.box{
+	width: 1100px;
+	padding-bottom: 270px;
+	margin: 0 auto;background: white;
+}
+.art-con{
+	width: 780px;
+	margin: 0 auto;
+}
+.art-title{
+	width: 730px;height: 75px;
+	line-height: 75px;
+	padding-top: 53px;
+	font-size: 25px;
+	color: #4c3138;
+	border-bottom: 2px solid #bab9bf;
+	font-weight: bold;
+}
+.art-author{
+	font-family: "微软雅黑";
+	font-size: 12px;
+	padding: 18px 0 63px 0;
+}
+.act-txt{
+	padding-top: 35px;
+}
+.act-txt h3{
+	padding: 0 0 30px 0;
+}
+.act-txt p{
+	padding-bottom: 25px;
+}
+.zan{
+	width: 73px;height: 73px;
+	margin: 0 auto;cursor: pointer;position: relative;
+	background: url(../images/article_iflike.png);
+	margin-top: 80px;transition: all 0.5s;
+}
+.zan:hover{
+	background-position-y: -73px;
+}
+.zan:hover>.like{
+	display: block;
+}
+.like{
+	width: 135px;height: 35px;
+	line-height: 35px;position: absolute;left: 73px;
+	top: 19px;color: white;text-align: center;
+	background: url(../images/article_iflike_nomberbg.png) no-repeat;
+	display: none;transition: all 1s;
+}
+.like-txt{
+	width: 150px;font-family: "宋体";
+	text-align: center;line-height: 50px;
+	position: absolute;font-size: 24px;
+	left: 0;top: 700px;
+}

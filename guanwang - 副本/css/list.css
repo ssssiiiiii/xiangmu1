@@ -1,0 +1,77 @@
+.list_content{
+	width: 1100px;
+	margin: 0 auto;
+}
+
+h1{
+	width: 1100px;color: #311759;
+	height: 61px;line-height: 60px;
+	background: url(../images/pen_line_long.png) no-repeat;
+	background-position-y: 60px;
+}
+h1 span{
+	display: block;
+	float: right;cursor: pointer;
+	width: 61px;height: 54px;
+	margin-top: 9px;
+	background: url(../images/pen.png);
+}
+h1 span:hover{
+	background: url(../images/pen_hover.png);
+}
+#list{
+	width: 1100px;overflow: hidden;padding-top: 40px;
+}
+#list li{
+	width: 533px;height: 238px;
+	float: left;margin: 0 20px 30px 0;
+	background: white;border: 1px solid transparent;
+	transition: all 0.5s;cursor: pointer;
+}
+#list li:hover{
+	border-color: #111111;transform: translateY(-5px);
+	transition: transform 0.5s;
+}
+#list li:hover>.sanjiao{
+	transform: translateX(60px);transition: transform 0.5s;
+}
+#list li img,.list_txt{
+	float: left;margin: 37px 16px 0 13px;
+}
+.list_txt{
+	width: 210px;
+	margin-left: 0;
+	font-size: 15px;
+}
+.list_txt h6{
+	font-weight:normal;
+	font-size: 20px;
+}
+.list_txt p{
+	padding:5px 0 13px 0;
+}
+.sanjiao{
+	width: 0;border-top: 9px solid white;
+	border-right: 7px solid transparent;
+	border-left: 7px solid transparent;
+	float: left;margin-top: 37px;transition: all 0.5s;
+}
+.list-more{
+	width: 107px;height: 175px;
+	margin: 0 auto;
+	background: url(../images/list_gomore_bg.jpg);
+}
+.list-more-con{
+	width: 58px;height: 58px;
+	margin: 13px auto;
+	margin-bottom: 130px;
+	cursor: pointer;
+	background: url(../images/lis_more_btn_bg.png);
+	background-position-y: -58px;transition: all 0.5s;
+}
+.list-more-con:hover{
+	background-position-y: 0;transition: all 0.5s;
+}
+.nomore{
+	background: url(../images/list_gomore_bg_nomore.jpg);
+}
